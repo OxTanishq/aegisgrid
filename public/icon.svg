@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="96" fill="#080D12"/>
+  <circle cx="256" cy="256" r="210" stroke="#17232D" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="256" cy="256" r="140" stroke="#17232D" stroke-width="1.5"/>
+  <line x1="256" y1="20" x2="256" y2="492" stroke="#17232D" stroke-width="1.5"/>
+  <line x1="20" y1="256" x2="492" y2="256" stroke="#17232D" stroke-width="1.5"/>
+  
+  <!-- Outer Tactical Shield Path -->
+  <path d="M256 64L384 128V248C384 340 328 416 256 448C184 416 128 340 128 248V128L256 64Z" 
+        stroke="#48DDF2" stroke-width="12" stroke-linejoin="round" fill="#111922" fill-opacity="0.9"/>
+  
+  <!-- Inner Cross & Hex Node -->
+  <path d="M256 128V376M180 252H332" stroke="#9FE870" stroke-width="10" stroke-linecap="round"/>
+  <polygon points="256,190 300,215 300,265 256,290 212,265 212,215" stroke="#9FE870" stroke-width="6" fill="#080D12"/>
+  <circle cx="256" cy="240" r="12" fill="#48DDF2"/>
+  
+  <!-- Corner Tactical Crosshairs -->
+  <path d="M72 104H104M72 104V72" stroke="#8495A5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M440 104H408M440 104V72" stroke="#8495A5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M72 408H104M72 408V440" stroke="#8495A5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M440 408H408M440 408V440" stroke="#8495A5" stroke-width="4" stroke-linecap="round"/>
+</svg>

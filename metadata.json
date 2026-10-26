@@ -1,0 +1,8 @@
+{
+  "name": "AEGIS GRID",
+  "description": "Offline Tactical Communication & Situational Awareness Platform for resilient defense technology and team coordination.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

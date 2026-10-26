@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-midnight: #080D12;
+    --bg-graphite: #111922;
+    --bg-surface: #17232D;
+    --tactical-green: #9FE870;
+    --electric-cyan: #48DDF2;
+    --muted-steel: #8495A5;
+    --warning-amber: #FFBF69;
+    --critical-red: #FF6464;
+    --text-main: #F3F7FA;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #080D12;
+    color: #F3F7FA;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display, .font-heading {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Attractive headline typography utility classes */
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080D12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2c38;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2b3e4f;
+}
+
+/* Tactical Background Grid Pattern */
+.bg-tactical-grid {
+  background-image: 
+    linear-gradient(to right, rgba(72, 221, 242, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(72, 221, 242, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-tactical-subgrid {
+  background-image: 
+    linear-gradient(to right, rgba(159, 232, 112, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(159, 232, 112, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Print Stylesheet for Report Center */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-surface {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+  }
+
+  .print-text-dark {
+    color: #0f172a !important;
+  }
+
+  .print-text-muted {
+    color: #64748b !important;
+  }
+}
